@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import PageObjects.Components;
 import Utilities.ConfigDetails;
 
-public class Cam extends BaseClass {
+public class All extends BaseClass {
 	@Test(priority = 1)
 	public void downloadingLogs() throws EncryptedDocumentException, IOException, InterruptedException, AWTException {
 
