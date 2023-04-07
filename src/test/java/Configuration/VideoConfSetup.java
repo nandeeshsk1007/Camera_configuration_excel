@@ -3,6 +3,7 @@ package Configuration;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import PageObjects.Components;
@@ -91,5 +92,7 @@ public class VideoConfSetup extends BaseClass{
 		//Logout
 		Thread.sleep(1000);
 		components.logoutbutton.click();
+		Alert al = driver.switchTo().alert();
+		al.accept();
 	}
 }

@@ -1,5 +1,6 @@
 package Configuration;
 
+import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 
 import PageObjects.Components;
@@ -25,5 +26,7 @@ public class Image extends BaseClass{
 		//Logout
 		Thread.sleep(1000);
 		components.logoutbutton.click();
+		Alert al = driver.switchTo().alert();
+		al.accept();
 	}
 }

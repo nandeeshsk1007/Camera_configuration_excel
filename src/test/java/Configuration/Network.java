@@ -37,6 +37,8 @@ public class Network extends BaseClass{
 		//Logout
 		Thread.sleep(1000);
 		components.logoutbutton.click();
+		Alert al = driver.switchTo().alert();
+		al.accept();
 	}
 	
 }

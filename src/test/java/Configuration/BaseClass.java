@@ -32,11 +32,11 @@ public class BaseClass {
 
 		//Close modify password tips popup
 		components.exitFromTipsPopup();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 
 		//To click on configuration button
 		components.configuration();
-		Thread.sleep(15000);
+		Thread.sleep(5000);
 	}
 
 	
